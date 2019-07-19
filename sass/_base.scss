@@ -18,9 +18,11 @@
   --line: 1px solid var(--color-grey-light-2);
 }
 // Note: media query breakpoints ($bp) are in em, not rem.
-$bp-largest: 75em;  // Largest screen: 1200px/16 = 75em
-$bp-large: 70em;    // Large screen: 1120px/16 = 68.75em
-$bp-medium: 56.25em;   // Medium screen: 900px/16 = 56.25em
+$bp-largest: 75em;   // Largest screen: 1200px/16 = 75em
+$bp-large: 68.75em;  // Large screen: 1100px/16 = 68.75em
+$bp-medium: 56.25em; // Medium screen: 900px/16 = 56.25em
+$bp-small: 37.5em;  // Small screen: 600px/16 = 37.5em
+$bp-smallest: 31.25em;  // Smallest screen: 500px/16 = 31.25em
 
 * {
   margin: 0;
