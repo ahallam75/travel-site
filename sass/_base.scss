@@ -17,6 +17,10 @@
 
   --line: 1px solid var(--color-grey-light-2);
 }
+// Note: media query breakpoints ($bp) are in em, not rem.
+$bp-largest: 75em;  // Largest screen: 1200px/16 = 75em
+$bp-large: 70em;    // Large screen: 1120px/16 = 68.75em
+$bp-medium: 56.25em;   // Medium screen: 900px/16 = 56.25em
 
 * {
   margin: 0;
@@ -31,7 +35,11 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; //1rem = 10px, i.e. - 10px/16px = 62.5%.
+  font-size: 62.5%; // 1rem = 10px, i.e. - 10px/16px = 62.5%.
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%; // Reduce to 8px, i.e. - 8px/16px = 50%
+  }
 }
 
 body {
